@@ -3,176 +3,470 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Culture Unisex Wellness Zone | Spa & Massage in Sector 119 Noida</title>
+
   <meta name="description" content="Culture Unisex Wellness Zone is a massage spa in Sector 119, Noida. Visit us at LGF 29, 30, The Aranya, Hotmart. Open 10 AM to 10 PM. Call or WhatsApp for appointments.">
+
   <meta name="keywords" content="spa near me, spa in sector 119 noida, massage spa sector 119, massage centre near me, unisex spa near me, spa near me noida, body massage sector 119 noida">
+
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#111111">
 
   <style>
-    :root{
-      --bg:#0c0c0c;
-      --card:#151515;
-      --soft:#202020;
-      --gold:#d7ad63;
-      --gold2:#f0cf8b;
-      --white:#fff;
-      --muted:#bdbdbd;
-      --line:rgba(255,255,255,.10);
-      --green:#20b858;
+    :root {
+      --bg: #0b0b0b;
+      --card: #151515;
+      --gold: #d7ad63;
+      --gold-light: #f0cf8b;
+      --white: #ffffff;
+      --muted: #bdbdbd;
+      --border: rgba(255,255,255,.10);
+      --green: #20b858;
     }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{
-      font-family:Arial,Helvetica,sans-serif;
-      background:var(--bg);
-      color:var(--white);
-      line-height:1.6;
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    a{text-decoration:none;color:inherit}
-    img{display:block;width:100%;object-fit:cover}
-    .container{width:min(1120px,92%);margin:auto}
-    header{
-      position:sticky;top:0;z-index:50;
-      background:rgba(12,12,12,.94);
-      backdrop-filter:blur(12px);
-      border-bottom:1px solid var(--line);
+
+    html {
+      scroll-behavior: smooth;
     }
-    .nav{
-      min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--white);
+      line-height: 1.6;
     }
-    .brand{font-weight:800;letter-spacing:.4px;font-size:20px}
-    .brand span{color:var(--gold)}
-    nav{display:flex;gap:24px;align-items:center}
-    nav a{font-size:14px;color:#ddd}
-    nav a:hover{color:var(--gold2)}
-    .nav-cta{
-      padding:10px 16px;border:1px solid var(--gold);border-radius:24px;color:var(--gold2)
+
+    a {
+      text-decoration: none;
+      color: inherit;
     }
-    .hero{
-      min-height:720px;
-      display:grid;place-items:center;
-      position:relative;overflow:hidden;
+
+    img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1120px;
+      margin: auto;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(10,10,10,.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+    }
+
+    nav a {
+      color: #ddd;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: var(--gold-light);
+    }
+
+    .call-btn {
+      border: 1px solid var(--gold);
+      padding: 10px 17px;
+      border-radius: 30px;
+      color: var(--gold-light);
+      font-weight: bold;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 720px;
+      display: flex;
+      align-items: center;
+      position: relative;
       background:
-        linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.42)),
-        url("https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1800&q=85") center/cover;
+        linear-gradient(
+          90deg,
+          rgba(0,0,0,.85),
+          rgba(0,0,0,.45)
+        ),
+        url("https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
     }
-    .hero:after{
-      content:"";position:absolute;inset:auto 0 0;height:180px;
-      background:linear-gradient(transparent,var(--bg));
+
+    .hero-content {
+      max-width: 760px;
+      padding: 100px 0;
     }
-    .hero-content{position:relative;z-index:2;max-width:780px;text-align:left;padding:90px 0}
-    .eyebrow{color:var(--gold2);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:13px;margin-bottom:16px}
-    h1{font-size:clamp(42px,7vw,76px);line-height:1.03;margin-bottom:20px}
-    .hero p{font-size:19px;color:#e5e5e5;max-width:650px}
-    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;
-      padding:14px 22px;border-radius:30px;font-weight:700;border:1px solid var(--gold)
+
+    .eyebrow {
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 15px;
     }
-    .btn-gold{background:var(--gold);color:#111}
-    .btn-dark{background:rgba(0,0,0,.45);color:#fff}
-    section{padding:82px 0}
-    .section-head{text-align:center;max-width:720px;margin:0 auto 42px}
-    .section-head .eyebrow{margin-bottom:8px}
-    h2{font-size:clamp(30px,5vw,48px);line-height:1.15;margin-bottom:12px}
-    .section-head p{color:var(--muted)}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .card{
-      background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;
-      transition:.25s transform,.25s border-color;
+
+    h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.05;
+      margin-bottom: 22px;
     }
-    .card:hover{transform:translateY(-5px);border-color:rgba(215,173,99,.45)}
-    .card-img{height:210px}
-    .card-body{padding:22px}
-    .card h3{font-size:21px;margin-bottom:7px}
-    .card p{color:var(--muted);font-size:14px}
-    .pill{
-      display:inline-block;margin-top:14px;padding:6px 11px;border-radius:20px;
-      background:rgba(215,173,99,.12);color:var(--gold2);font-size:12px;font-weight:700
+
+    .hero p {
+      font-size: 19px;
+      color: #eee;
+      max-width: 650px;
     }
-    .about{
-      display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 30px;
     }
-    .about-img{height:500px;border-radius:22px}
-    .about-copy p{color:var(--muted);margin:15px 0}
-    .checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
-    .check{background:var(--card);padding:13px;border-radius:12px;border:1px solid var(--line)}
-    .rating{
-      background:linear-gradient(135deg,#171717,#0f0f0f);
-      border:1px solid var(--line);border-radius:20px;padding:28px;
-      display:flex;justify-content:space-between;gap:20px;align-items:center
+
+    .btn {
+      padding: 14px 23px;
+      border-radius: 30px;
+      font-weight: bold;
+      border: 1px solid var(--gold);
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
     }
-    .stars{color:#ffc34d;font-size:23px;letter-spacing:2px}
-    .rating strong{font-size:42px}
-    .contact{
-      display:grid;grid-template-columns:1fr 1fr;gap:20px
+
+    .btn-gold {
+      background: var(--gold);
+      color: #111;
     }
-    .contact-box{
-      background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px
+
+    .btn-dark {
+      background: rgba(0,0,0,.5);
+      color: white;
     }
-    .contact-row{display:flex;gap:15px;margin:20px 0;color:#ddd}
-    .icon{font-size:24px}
-    .map{
-      width:100%;min-height:340px;border:0;border-radius:18px;
-      background:#1a1a1a
+
+    /* SECTIONS */
+    section {
+      padding: 85px 0;
     }
-    footer{border-top:1px solid var(--line);padding:35px 0;color:#aaa;text-align:center}
-    .sticky{
-      display:none;position:fixed;bottom:0;left:0;right:0;z-index:100;
-      grid-template-columns:1fr 1fr;background:#111;border-top:1px solid var(--line)
+
+    .section-head {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 45px;
     }
-    .sticky a{padding:15px;text-align:center;font-weight:800}
-    .sticky .call{background:#181818}
-    .sticky .wa{background:var(--green)}
-    @media(max-width:800px){
-      nav{display:none}
-      .hero{min-height:650px}
-      .grid,.about,.contact{grid-template-columns:1fr}
-      .about-img{height:360px}
-      .rating{flex-direction:column;text-align:center}
-      section{padding:62px 0}
-      .sticky{display:grid}
-      body{padding-bottom:60px}
+
+    h2 {
+      font-size: clamp(30px,5vw,48px);
+      line-height: 1.15;
+      margin-bottom: 12px;
     }
-    @media(max-width:520px){
-      .checks{grid-template-columns:1fr}
-      h1{font-size:43px}
-      .hero p{font-size:16px}
-      .nav-cta{padding:8px 12px}
+
+    .section-head p {
+      color: var(--muted);
+    }
+
+    /* SERVICES */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      transition: .25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(215,173,99,.5);
+    }
+
+    .service-image {
+      height: 220px;
+    }
+
+    .service-content {
+      padding: 22px;
+    }
+
+    .service-content h3 {
+      font-size: 21px;
+      margin-bottom: 7px;
+    }
+
+    .service-content p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .book-small {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 7px 13px;
+      border-radius: 20px;
+      background: rgba(215,173,99,.12);
+      color: var(--gold-light);
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    /* ABOUT */
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-image {
+      height: 500px;
+      border-radius: 22px;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      margin: 15px 0;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .feature {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 13px;
+      border-radius: 12px;
+    }
+
+    /* REVIEWS */
+    .rating-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 35px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .stars {
+      color: #ffc34d;
+      font-size: 25px;
+      letter-spacing: 3px;
+    }
+
+    .rating-number {
+      font-size: 45px;
+      font-weight: bold;
+    }
+
+    /* CONTACT */
+    .contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .contact-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 30px;
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 15px;
+      margin: 20px 0;
+      color: #ddd;
+    }
+
+    .contact-icon {
+      font-size: 22px;
+    }
+
+    /* MAP */
+    .map-box {
+      margin-top: 25px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 35px 0;
+      text-align: center;
+      color: #aaa;
+    }
+
+    /* MOBILE BUTTONS */
+    .mobile-buttons {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .mobile-buttons a {
+      padding: 16px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .mobile-call {
+      background: #171717;
+    }
+
+    .mobile-whatsapp {
+      background: var(--green);
+    }
+
+    /* MOBILE */
+    @media(max-width: 800px) {
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        min-height: 650px;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      .contact {
+        grid-template-columns: 1fr;
+      }
+
+      .about-image {
+        height: 360px;
+      }
+
+      .rating-box {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .mobile-buttons {
+        display: grid;
+      }
+
+      body {
+        padding-bottom: 60px;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+    }
+
+    @media(max-width: 520px) {
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 44px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
     }
   </style>
 
-  <!-- LocalBusiness structured data -->
+  <!-- SEO / Local Business Schema -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"DaySpa",
-    "name":"Culture Unisex Wellness Zone",
-    "telephone":"+918287142985",
-    "url":"https://cultureunisexwellnesszonespa-spa.in/",
-    "address":{
-      "@type":"PostalAddress",
-      "streetAddress":"LGF 29, 30, The Aranya, Hotmart, Sector 119",
-      "addressLocality":"Noida",
-      "addressRegion":"Uttar Pradesh",
-      "postalCode":"201304",
-      "addressCountry":"IN"
+    "@context": "https://schema.org",
+    "@type": "DaySpa",
+    "name": "Culture Unisex Wellness Zone",
+    "telephone": "+918287142985",
+    "url": "https://cultureunisexwellnesszonespa-spa.in/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "LGF 29, 30, The Aranya, Hotmart, Sector 119",
+      "addressLocality": "Noida",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "201304",
+      "addressCountry": "IN"
     },
-    "openingHours":"Mo-Su 10:00-22:00",
-    "aggregateRating":{
-      "@type":"AggregateRating",
-      "ratingValue":"4.6",
-      "reviewCount":"70"
+    "openingHours": "Mo-Su 10:00-22:00",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.6",
+      "reviewCount": "70"
     }
   }
   </script>
 </head>
 
 <body>
+
+<!-- HEADER -->
 <header>
   <div class="container nav">
-    <a class="brand" href="#home">Culture <span>Unisex Wellness Zone</span></a>
+
+    <a href="#home" class="logo">
+      Culture <span>Unisex Wellness Zone</span>
+    </a>
+
     <nav>
       <a href="#home">Home</a>
       <a href="#services">Services</a>
@@ -180,146 +474,558 @@
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="nav-cta" href="tel:+918287142985">Call Now</a>
+
+    <a href="tel:+918287142985" class="call-btn">
+      Call Now
+    </a>
+
   </div>
 </header>
 
-<main id="home">
-  <section class="hero">
-    <div class="container hero-content">
-      <div class="eyebrow">Sector 119 • Noida</div>
-      <h1>Relax. Refresh. Feel Your Best.</h1>
-      <p>
-        Welcome to <strong>Culture Unisex Wellness Zone</strong> — a comfortable
-        massage spa in Sector 119, Noida, created for relaxation and wellness.
-      </p>
-      <div class="buttons">
-        <a class="btn btn-gold" href="https://wa.me/918287142985?text=Hello%20Culture%20Unisex%20Wellness%20Zone%2C%20I%20found%20you%20on%20Google.%20I%20would%20like%20to%20book%20an%20appointment.">WhatsApp Appointment</a>
-        <a class="btn btn-dark" href="tel:+918287142985">Call 08287142985</a>
-      </div>
-    </div>
-  </section>
 
-  <section id="services">
-    <div class="container">
-      <div class="section-head">
-        <div class="eyebrow">Our Services</div>
-        <h2>Massage & Wellness Services</h2>
-        <p>Choose a relaxing wellness experience and contact us for availability, duration and current pricing.</p>
-      </div>
+<!-- HERO -->
+<section class="hero" id="home">
 
-      <div class="grid">
-        <article class="card">
-          <img class="card-img" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80" alt="Relaxing spa treatment">
-          <div class="card-body"><h3>Swedish Massage</h3><p>Gentle, relaxing massage designed to help you unwind and refresh.</p><span class="pill">Enquire & Book</span></div>
-        </article>
-        <article class="card">
-          <img class="card-img" src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=900&q=80" alt="Deep tissue massage">
-          <div class="card-body"><h3>Deep Tissue Massage</h3><p>A focused massage experience for relaxation and muscle comfort.</p><span class="pill">Enquire & Book</span></div>
-        </article>
-        <article class="card">
-          <img class="card-img" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=80" alt="Aromatherapy spa">
-          <div class="card-body"><h3>Aroma Therapy</h3><p>A calming wellness session combining massage with a soothing ambience.</p><span class="pill">Enquire & Book</span></div>
-        </article>
-        <article class="card">
-          <img class="card-img" src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80" alt="Wellness massage">
-          <div class="card-body"><h3>Balinese Massage</h3><p>A traditional-inspired full-body wellness experience.</p><span class="pill">Enquire & Book</span></div>
-        </article>
-        <article class="card">
-          <img class="card-img" src="https://images.unsplash.com/photo-1544161497-8bc9b9f6f9a3?auto=format&fit=crop&w=900&q=80" alt="Thai massage spa">
-          <div class="card-body"><h3>Thai Massage</h3><p>A traditional massage experience focused on relaxation and flexibility.</p><span class="pill">Enquire & Book</span></div>
-        </article>
-        <article class="card">
-          <img class="card-img" src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=900&q=80" alt="Hot stone massage">
-          <div class="card-body"><h3>Hot Stone Massage</h3><p>A warm, soothing wellness experience for deep relaxation.</p><span class="pill">Enquire & Book</span></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container about">
-      <img class="about-img" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=85" alt="Culture Unisex Wellness Zone spa ambience">
-      <div class="about-copy">
-        <div class="eyebrow">About Culture</div>
-        <h2>Your Local Wellness Space in Sector 119</h2>
-        <p>
-          Culture Unisex Wellness Zone is a massage spa in <strong>Sector 119, Noida</strong>.
-          Our goal is to provide a comfortable and relaxing environment where guests can
-          take a break from their busy routine.
-        </p>
-        <p>
-          Looking for a <strong>spa near me, spa in Sector 119 Noida, unisex spa near me
-          or massage centre near me</strong>? Contact us to check service availability and
-          book an appointment.
-        </p>
-        <div class="checks">
-          <div class="check">✓ Comfortable ambience</div>
-          <div class="check">✓ Professional service</div>
-          <div class="check">✓ Convenient Sector 119 location</div>
-          <div class="check">✓ Open 10 AM – 10 PM</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="reviews">
-    <div class="container">
-      <div class="section-head">
-        <div class="eyebrow">Google Reviews</div>
-        <h2>Loved by Our Guests</h2>
-      </div>
-      <div class="rating">
-        <div>
-          <div class="stars">★★★★★</div>
-          <p>Google Business Profile rating</p>
-        </div>
-        <div><strong>4.6</strong><br><span>Based on 70 reviews</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <div class="section-head">
-        <div class="eyebrow">Visit Us</div>
-        <h2>Book Your Appointment</h2>
-        <p>Call or WhatsApp us before visiting to check availability.</p>
-      </div>
-
-      <div class="contact">
-        <div class="contact-box">
-          <h3>Culture Unisex Wellness Zone</h3>
-          <div class="contact-row"><div class="icon">📍</div><div>LGF 29, 30, The Aranya, Hotmart, Sector 119, Noida, Uttar Pradesh 201304</div></div>
-          <div class="contact-row"><div class="icon">📞</div><div><a href="tel:+918287142985">08287142985</a></div></div>
-          <div class="contact-row"><div class="icon">🕐</div><div>Open daily: 10:00 AM – 10:00 PM</div></div>
-          <div class="buttons">
-            <a class="btn btn-gold" href="tel:+918287142985">Call Now</a>
-            <a class="btn btn-dark" href="https://wa.me/918287142985?text=Hello%20Culture%20Unisex%20Wellness%20Zone%2C%20I%20would%20like%20to%20book%20an%20appointment.">WhatsApp</a>
-          </div>
-        </div>
-
-        <div class="contact-box">
-          <h3>Find Us on Google Maps</h3>
-          <p style="color:#aaa;margin:10px 0 20px">LGF 29, 30, The Aranya, Hotmart, Sector 119, Noida.</p>
-          <a class="btn btn-gold" href="https://maps.app.goo.gl/ivuAfLESegouKhjG9" target="_blank" rel="noopener">Get Directions</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
   <div class="container">
-    <strong>Culture Unisex Wellness Zone</strong><br>
-    Spa & Massage • Sector 119, Noida<br><br>
-    © 2026 Culture Unisex Wellness Zone. All rights reserved.
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        Sector 119 • Noida
+      </div>
+
+      <h1>
+        Relax. Refresh. Feel Your Best.
+      </h1>
+
+      <p>
+        Welcome to <strong>Culture Unisex Wellness Zone</strong> —
+        a relaxing massage spa in Sector 119, Noida.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          class="btn btn-gold"
+          href="https://wa.me/918287142985?text=Hello%20Culture%20Unisex%20Wellness%20Zone%2C%20I%20found%20you%20on%20Google.%20I%20would%20like%20to%20book%20an%20appointment."
+          target="_blank">
+          💬 WhatsApp Appointment
+        </a>
+
+        <a
+          class="btn btn-dark"
+          href="tel:+918287142985">
+          📞 Call 08287142985
+        </a>
+
+      </div>
+
+    </div>
+
   </div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section id="services">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Our Services
+      </div>
+
+      <h2>
+        Massage & Wellness Services
+      </h2>
+
+      <p>
+        Choose your preferred wellness experience and contact us
+        for availability and current pricing.
+      </p>
+
+    </div>
+
+
+    <div class="services">
+
+
+      <div class="service-card">
+
+        <img
+          class="service-image"
+          src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80"
+          alt="Swedish massage spa">
+
+        <div class="service-content">
+
+          <h3>
+            Swedish Massage
+          </h3>
+
+          <p>
+            A gentle and relaxing massage designed to help you unwind
+            and refresh.
+          </p>
+
+          <a
+            class="book-small"
+            href="https://wa.me/918287142985?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Swedish%20Massage."
+            target="_blank">
+            Enquire & Book
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <img
+          class="service-image"
+          src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=900&q=80"
+          alt="Deep tissue massage">
+
+        <div class="service-content">
+
+          <h3>
+            Deep Tissue Massage
+          </h3>
+
+          <p>
+            A focused massage experience designed for relaxation
+            and muscle comfort.
+          </p>
+
+          <a
+            class="book-small"
+            href="https://wa.me/918287142985?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Deep%20Tissue%20Massage."
+            target="_blank">
+            Enquire & Book
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <img
+          class="service-image"
+          src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=80"
+          alt="Aromatherapy spa">
+
+        <div class="service-content">
+
+          <h3>
+            Aroma Therapy
+          </h3>
+
+          <p>
+            A calming wellness experience with a soothing
+            massage and ambience.
+          </p>
+
+          <a
+            class="book-small"
+            href="https://wa.me/918287142985?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Aroma%20Therapy."
+            target="_blank">
+            Enquire & Book
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <img
+          class="service-image"
+          src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80"
+          alt="Balinese massage">
+
+        <div class="service-content">
+
+          <h3>
+            Balinese Massage
+          </h3>
+
+          <p>
+            A traditional-inspired full-body wellness experience
+            focused on relaxation.
+          </p>
+
+          <a
+            class="book-small"
+            href="https://wa.me/918287142985?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Balinese%20Massage."
+            target="_blank">
+            Enquire & Book
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <img
+          class="service-image"
+          src="https://images.unsplash.com/photo-1544161497-8bc9b9f6f9a3?auto=format&fit=crop&w=900&q=80"
+          alt="Thai massage">
+
+        <div class="service-content">
+
+          <h3>
+            Thai Massage
+          </h3>
+
+          <p>
+            A traditional massage experience focused on relaxation
+            and flexibility.
+          </p>
+
+          <a
+            class="book-small"
+            href="https://wa.me/918287142985?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Thai%20Massage."
+            target="_blank">
+            Enquire & Book
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <img
+          class="service-image"
+          src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=900&q=80"
+          alt="Hot stone massage">
+
+        <div class="service-content">
+
+          <h3>
+            Hot Stone Massage
+          </h3>
+
+          <p>
+            A warm and soothing wellness experience designed
+            for deep relaxation.
+          </p>
+
+          <a
+            class="book-small"
+            href="https://wa.me/918287142985?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Hot%20Stone%20Massage."
+            target="_blank">
+            Enquire & Book
+          </a>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+  <div class="container about">
+
+    <img
+      class="about-image"
+      src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=85"
+      alt="Culture Unisex Wellness Zone spa">
+
+    <div class="about-text">
+
+      <div class="eyebrow">
+        About Culture
+      </div>
+
+      <h2>
+        Your Local Wellness Space in Sector 119
+      </h2>
+
+      <p>
+        <strong>Culture Unisex Wellness Zone</strong> is a massage spa
+        located in Sector 119, Noida.
+      </p>
+
+      <p>
+        We provide a comfortable and relaxing environment where guests
+        can take a break from their busy routine.
+      </p>
+
+      <p>
+        Looking for a <strong>spa near me, spa in Sector 119 Noida,
+        unisex spa near me or massage centre near me?</strong>
+        Contact us to check availability and book an appointment.
+      </p>
+
+
+      <div class="features">
+
+        <div class="feature">
+          ✓ Comfortable ambience
+        </div>
+
+        <div class="feature">
+          ✓ Professional service
+        </div>
+
+        <div class="feature">
+          ✓ Sector 119 location
+        </div>
+
+        <div class="feature">
+          ✓ Open 10 AM – 10 PM
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- REVIEWS -->
+<section id="reviews">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Google Reviews
+      </div>
+
+      <h2>
+        Loved by Our Guests
+      </h2>
+
+    </div>
+
+
+    <div class="rating-box">
+
+      <div>
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <p>
+          Google Business Profile rating
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <div class="rating-number">
+          4.6
+        </div>
+
+        <span>
+          Based on 70 reviews
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Visit Us
+      </div>
+
+      <h2>
+        Book Your Appointment
+      </h2>
+
+      <p>
+        Call or WhatsApp us before visiting to check availability.
+      </p>
+
+    </div>
+
+
+    <div class="contact">
+
+
+      <div class="contact-box">
+
+        <h3>
+          Culture Unisex Wellness Zone
+        </h3>
+
+
+        <div class="contact-row">
+
+          <div class="contact-icon">
+            📍
+          </div>
+
+          <div>
+            LGF 29, 30, The Aranya, Hotmart,
+            Sector 119, Noida, Uttar Pradesh 201304
+          </div>
+
+        </div>
+
+
+        <div class="contact-row">
+
+          <div class="contact-icon">
+            📞
+          </div>
+
+          <div>
+            <a href="tel:+918287142985">
+              08287142985
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="contact-row">
+
+          <div class="contact-icon">
+            🕐
+          </div>
+
+          <div>
+            Open Daily: 10:00 AM – 10:00 PM
+          </div>
+
+        </div>
+
+
+        <div class="buttons">
+
+          <a
+            class="btn btn-gold"
+            href="tel:+918287142985">
+            📞 Call Now
+          </a>
+
+          <a
+            class="btn btn-dark"
+            href="https://wa.me/918287142985?text=Hello%20Culture%20Unisex%20Wellness%20Zone%2C%20I%20would%20like%20to%20book%20an%20appointment."
+            target="_blank">
+            💬 WhatsApp
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="contact-box">
+
+        <h3>
+          Find Us on Google Maps
+        </h3>
+
+        <p style="color:#aaa;margin:15px 0 25px">
+
+          LGF 29, 30, The Aranya, Hotmart,
+          Sector 119, Noida.
+
+        </p>
+
+        <a
+          class="btn btn-gold"
+          href="https://maps.app.goo.gl/ivuAfLESegouKhjG9"
+          target="_blank"
+          rel="noopener">
+
+          📍 Get Directions
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+  <div class="container">
+
+    <strong>
+      Culture Unisex Wellness Zone
+    </strong>
+
+    <br>
+
+    Spa & Massage • Sector 119, Noida
+
+    <br><br>
+
+    📞 08287142985
+
+    <br><br>
+
+    © 2026 Culture Unisex Wellness Zone.
+    All rights reserved.
+
+  </div>
+
 </footer>
 
-<div class="sticky">
-  <a class="call" href="tel:+918287142985">📞 Call Now</a>
-  <a class="wa" href="https://wa.me/918287142985?text=Hello%20Culture%20Unisex%20Wellness%20Zone%2C%20I%20found%20you%20on%20Google.%20I%20would%20like%20to%20book%20an%20appointment.">💬 WhatsApp</a>
+
+<!-- MOBILE STICKY BUTTONS -->
+<div class="mobile-buttons">
+
+  <a
+    class="mobile-call"
+    href="tel:+918287142985">
+    📞 Call Now
+  </a>
+
+  <a
+    class="mobile-whatsapp"
+    href="https://wa.me/918287142985?text=Hello%20Culture%20Unisex%20Wellness%20Zone%2C%20I%20found%20you%20on%20Google.%20I%20would%20like%20to%20book%20an%20appointment."
+    target="_blank">
+    💬 WhatsApp
+  </a>
+
 </div>
+
 </body>
-</html> 
+</html>
